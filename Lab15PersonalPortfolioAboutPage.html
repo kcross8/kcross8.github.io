@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .top-container {
+          background-color: #f1f1f1;
+          padding: 30px;
+          text-align: center;
+        }
+        
+        .header {
+          padding: 10px 16px;
+          background: #555;
+          color: #f1f1f1;
+        }
+        
+        .content {
+          padding: 16px;
+        }
+        
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        
+        .sticky + .content {
+          padding-top: 102px;
+        }
+        </style>
+        </head>
+        <body>      
+       
+        
+        <div class="header" id="myHeader">
+            <article>
+                <header>
+                    <h1>About - Kyle Cross</h1>   
+                  <p><a href="/Users/kyle/source/html/Lab15PersonalPortfolio.html">Home</a> | <a href="C:\Users\kyle\source\html\Lab15PersonalPortfolioAboutPage.html">About</a> | <a href="/Users/kyle/source/html/Lab15PersonalPortfolioPortfolio.html">Portfolio</a></p>
+                </header>
+              </article>
+        </div>
+<head>
+    <title> About - Kyle Cross </title>         
+</head>
+
+<body>
+    
+    <div class="content">
+    <h3>Education</h3> 
+    <p>Kyle is currently a student in Grand Circus's C#/.NET Fulltime Bootcamp. He is expected to graduate on June 26th, 2020. </p>
+    
+    <h3>Biography</h3> 
+    <p>Kyle was born in Detroit, MI. He has been employed in a series of positions in the service industry, such as a Harbormaster for a yacht club in Grosse Pointe, MI, a Concierge for the Ritz Carlton in Beaver Creek, CO, and as a Public Safety Officer in Cordillera, CO. He is now enrolled as a full-time student learning to develop software in C# and .NET. </p>
+
+    <h3>Contact</h3>
+    <p>If you would like to contact Kyle, please fill out the form below.</p>
+    <body>        
+        <form action="mailto:kcross8@gmail.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <input type="text" name="comment" size="50"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </form>
+    </div>
+    </body>
+        
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            </script>
+            
+
+
+</body>
+<footer>
+    <p>Kyle Cross</p>
+    <p><a href="mailto:kylecross808@gmail.com">KyleCross808@gmail.com</a> | <a href="https://www.linkedin.com/in/kyle-cross-9722a81aa/"> LinkedIn </a> | <a href="https://github.com/kcross8"> GitHub</a></p>
+  </footer>
+</html>
